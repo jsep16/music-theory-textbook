@@ -1,0 +1,38 @@
+# Chapter 2 Notation
+
+A self-contained web chapter with an audio player beside the score, all approved chapter text and tables, notation graphics, dotted clef tracing guides, and the printable student PDF. The instructor answer key is intentionally excluded.
+
+## Preview
+
+Open `index.html` in a browser. All images, the MP3, and the PDF use local relative paths. No package installation or build is required. For a local server, use any static-file server with this directory as its root.
+
+## Publish on GitHub Pages
+
+1. Create a repository named `music-theory-textbook` in your GitHub account. Use a public repository for GitHub Free Pages hosting.
+2. Upload the **contents** of this directory to the repository root, keeping the `assets` folder intact. `index.html` must be at the repository root, not inside another folder.
+3. Open repository **Settings → Pages**. Under Source select **Deploy from a branch**, then **main** and **/(root)**. Save.
+4. Wait for GitHub's Pages deployment to complete. GitHub displays the final HTTPS address in Settings → Pages. It usually has the form `https://jsep16.github.io/music-theory-textbook/`.
+5. Test the audio player and PDF download at the published address before adding it to Wix.
+
+The public repository and published website are publicly accessible. No student names, response records, private documents, or instructor answers are included. Typed practice answers stay only in the current page; this site does not submit, grade, or store them.
+
+## Embed in Wix
+
+1. In the Wix editor, create the chapter page.
+2. Choose **Add Elements → Embed Code → Embed a Site** (or the equivalent Embed Site control in Wix Studio).
+3. Paste the published HTTPS website address. Set the embed to the available content width and a generous height, then check both desktop and mobile layouts.
+4. Add an **Open full chapter** link to the same address for readers who prefer a separate full-width view.
+5. Publish the Wix page and test playback on it. Audio starts when the student presses Play, not automatically.
+
+An example iframe is in `wix-embed-example.txt`. Replace its marked address with the verified published address before using it.
+
+## Content and assets
+
+- `index.html`: chapter text, tables, figures, and controls.
+- `styles.css`: responsive reading layout and print styling.
+- `app.js`: section navigation, enlargement dialog, repeat/speed controls, and the compact player that follows listening students while they scroll.
+- `assets/chorale.mp3`: the supplied Media 1 recording, hosted with the chapter.
+- `assets/chapter-2-print.pdf`: latest approved 21-page chapter PDF.
+- `content-audit.json`: source coverage summary; no answer key or credentials.
+
+Keep descriptive titles and pedagogical annotations, but do not display media asset identifier numbers on figures in future chapters.

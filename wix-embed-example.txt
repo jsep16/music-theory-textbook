@@ -1,0 +1,14 @@
+Chapter address: https://jsep16.github.io/music-theory-textbook/
+Verify that GitHub Pages has finished publishing before adding this embed to Wix.
+
+<iframe
+  src="https://jsep16.github.io/music-theory-textbook/"
+  title="Chapter 2 Notation — read and listen"
+  width="100%"
+  height="1100"
+  style="border:0;display:block;"
+  allow="fullscreen"
+  loading="lazy">
+</iframe>
+
+Also provide a normal Wix button or text link labeled “Open full chapter” pointing to the same published address.
