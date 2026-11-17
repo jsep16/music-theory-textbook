@@ -14,7 +14,7 @@ Open `index.html` in a browser. All images, the MP3, and the PDF use local relat
 4. Wait for GitHub's Pages deployment to complete. GitHub displays the final HTTPS address in Settings → Pages. It usually has the form `https://jsep16.github.io/music-theory-textbook/`.
 5. Test the audio player and PDF download at the published address before adding it to Wix.
 
-The public repository and published website are publicly accessible. No student names, response records, private documents, or instructor answers are included. Typed practice answers stay only in the current page; this site does not submit, grade, or store them.
+The public repository and published website are publicly accessible. No student names, response records, private documents, or instructor answer PDF are included. Local answer-checking rules are necessarily readable in the public website source. Typed practice answers stay only in the current page; the site checks answers locally and does not submit them, record grades, or store responses after a reload.
 
 ## Embed in Wix
 
@@ -31,8 +31,11 @@ An example iframe is in `wix-embed-example.txt`. Replace its marked address with
 - `index.html`: chapter text, tables, figures, and controls.
 - `styles.css`: responsive reading layout and print styling.
 - `app.js`: section navigation, enlargement dialog, repeat/speed controls, and the compact player that follows listening students while they scroll.
+- `practice.js`: answer checking for the original note, rhythm, time-signature, and score-reading questions; mouse/touch/stylus tracing with undo and clear. Drawing is freehand practice and is not automatically assessed.
 - `assets/chorale.mp3`: the supplied Media 1 recording, hosted with the chapter.
 - `assets/chapter-2-print.pdf`: latest approved 21-page chapter PDF.
 - `content-audit.json`: source coverage summary; no answer key or credentials.
+
+The annotated score and guide sit side by side on wider screens. On phones, the score appears above an independently scrollable guide so students can consult both.
 
 Keep descriptive titles and pedagogical annotations, but do not display media asset identifier numbers on figures in future chapters.

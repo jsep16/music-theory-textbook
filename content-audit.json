@@ -72,5 +72,15 @@
     208
   ],
   "audio": "assets/chorale.mp3",
-  "instructor_answers_included": false
+  "instructor_answers_included": false,
+  "interactive_practice": {
+    "note_identification": 64,
+    "complete_measure": 10,
+    "four_beat_measures": 4,
+    "time_signature_blanks": 8,
+    "score_reading_questions": 4,
+    "freehand_tracing_guides": 4,
+    "auto_grade_drawing": false,
+    "responses_persist_after_reload": false
+  }
 }
