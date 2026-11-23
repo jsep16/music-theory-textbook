@@ -35,7 +35,7 @@
   function staff(x1,x2,top=80){return Array.from({length:5},(_,i)=>`<path d="M${x1} ${top+i*12}H${x2}"/>`).join('');}
   function note(x,y,value,options={}) {
     const hollow=value>=2, whole=value===4;
-    let s=`<ellipse cx="${x}" cy="${y}" rx="${whole?8:7}" ry="4.7" transform="rotate(-16 ${x} ${y})" fill="${hollow?'white':'currentColor'}" stroke="currentColor" stroke-width="1.8"/>`;
+    let s=`<ellipse cx="${x}" cy="${y}" rx="${whole?8:7}" ry="4.7" transform="rotate(-16 ${x} ${y})" fill="${hollow?'none':'currentColor'}" stroke="currentColor" stroke-width="1.8"/>`;
     if(!whole)s+=`<path d="M${x+6} ${y}V${y-40}" stroke="currentColor" stroke-width="1.7"/>`;
     if(value<1&&!options.beamed)for(let i=0;i<(value===.25?2:1);i++)s+=`<path d="M${x+6} ${y-40+i*9}c1 10 22 10 8 27c9-17-7-15-8-20" fill="currentColor"/>`;
     if(value===1.5||value===3)s+=`<circle cx="${x+15}" cy="${y-4}" r="2.4" fill="currentColor"/>`;
