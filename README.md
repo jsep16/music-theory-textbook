@@ -1,6 +1,6 @@
-# Chapter 2 Notation
+# Music Theory Textbook
 
-A self-contained web chapter with an audio player beside the score, all approved chapter text and tables, notation graphics, dotted clef tracing guides, and the printable student PDF. The instructor answer key is intentionally excluded.
+Chapter 2 is a self-contained web chapter with an audio player beside the score, all approved chapter text and tables, notation graphics, dotted clef tracing guides, and the printable student PDF. The instructor answer key is intentionally excluded.
 
 ## Preview
 
@@ -39,3 +39,17 @@ An example iframe is in `wix-embed-example.txt`. Replace its marked address with
 The annotated score and guide sit side by side on wider screens. On phones, the score appears above an independently scrollable guide so students can consult both.
 
 Keep descriptive titles and pedagogical annotations, but do not display media asset identifier numbers on figures in future chapters.
+
+
+## Chapters
+
+- [Chapter 2 · Notation](https://jsep16.github.io/music-theory-textbook/)
+- [Chapter 3 · Intervals](https://jsep16.github.io/music-theory-textbook/chapter-3/)
+
+## Ongoing editing and publication
+
+This repository is the working source for the whole digital textbook. Keep chapter content in stable locations: Chapter 2 at the root, Chapter 3 in `chapter-3/`, and future chapters in corresponding chapter folders. Approved student PDFs belong with each chapter; instructor answer PDFs stay outside this repository.
+
+Before publishing, run `node scripts/check-site.cjs` and check the affected browser flows when possible. Commit each coherent correction with a descriptive message, then push normally to `main`. Existing GitHub Pages settings publish that branch. Check the Pages workflow and affected public URLs before reporting completion. Git history provides a record of changes and recovery points.
+
+Authenticate once on the Mac using GitHub CLI's browser sign-in and configure it as Git's credential helper. Keep authentication information outside repository files. No manual website uploads are needed for regular chapter work.

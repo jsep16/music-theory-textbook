@@ -1,0 +1,8 @@
+Chapter 3 address:
+https://jsep16.github.io/music-theory-textbook/chapter-3/
+
+In Wix, add an Embed a Site element using the address above, or use:
+
+<iframe src="https://jsep16.github.io/music-theory-textbook/chapter-3/" title="Chapter 3 Intervals" width="100%" height="1100" style="border:0;display:block;" allow="fullscreen" loading="lazy"></iframe>
+
+Also offer an Open full chapter link to the same address. Check the embedded page on desktop and mobile before publishing the Wix page.
