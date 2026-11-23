@@ -1,26 +1,5 @@
 'use strict';
 (() => {
-  const menuButton = document.querySelector('#menu-toggle');
-  const menu = document.querySelector('#chapter-navigation');
-  function closeMenu() {menu.classList.remove('is-open');menuButton.setAttribute('aria-expanded','false');}
-  menuButton.addEventListener('click', () => {const open=menu.classList.toggle('is-open');menuButton.setAttribute('aria-expanded',String(open));});
-  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});
-  document.addEventListener('click',e=>{if(!menu.contains(e.target)&&!menuButton.contains(e.target))closeMenu();});
-  const navLinks=[...menu.querySelectorAll('nav a')];
-  const sections=[...document.querySelectorAll('main section[id]')];
-  let ticking=false;
-  const progress=document.querySelector('.reading-progress');
-  function updateReading() {
-    let active=sections[0];
-    for (const section of sections) if(section.getBoundingClientRect().top<160)active=section;
-    navLinks.forEach(a=>{if(a.hash===`#${active.id}`)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});
-    const max=document.documentElement.scrollHeight-innerHeight;
-    progress.style.width=`${max>0?Math.min(100,Math.max(0,scrollY/max*100)):0}%`;
-    ticking=false;
-  }
-  window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(updateReading);ticking=true;}},{passive:true});
-  window.addEventListener('resize',updateReading);updateReading();
   const audio=document.querySelector('#chapter-audio');
   const dock=document.querySelector('#audio-dock');
   const dockButton=document.querySelector('#dock-toggle');

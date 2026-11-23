@@ -48,6 +48,10 @@ Keep descriptive titles and pedagogical annotations, but do not display media as
 
 ## Ongoing editing and publication
 
+Every chapter sidebar lists all published chapters with collapsible topic lists. The current chapter starts expanded, and the current topic is highlighted while reading. On phones, the Chapters button opens the same navigator. Native disclosure controls work with keyboard input and without JavaScript.
+
+To add or rename a chapter or topic, update `chapters.json` and run `node scripts/build-navigation.cjs`. The generator writes relative links into every listed chapter so navigation works on GitHub Pages, local previews, and without JavaScript. Keep `book-navigation.css` and `book-navigation.js` linked from each chapter; they provide the shared styling, mobile menu, and current-topic indication. `scripts/check-site.cjs` verifies that the navigation matches the shared list and all topic links resolve.
+
 This repository is the working source for the whole digital textbook. Keep chapter content in stable locations: Chapter 2 at the root, Chapter 3 in `chapter-3/`, and future chapters in corresponding chapter folders. Approved student PDFs belong with each chapter; instructor answer PDFs stay outside this repository.
 
 Before publishing, run `node scripts/check-site.cjs` and check the affected browser flows when possible. Commit each coherent correction with a descriptive message, then push normally to `main`. Existing GitHub Pages settings publish that branch. Check the Pages workflow and affected public URLs before reporting completion. Git history provides a record of changes and recovery points.

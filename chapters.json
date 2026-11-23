@@ -1,0 +1,32 @@
+[
+  {
+    "number": 2,
+    "title": "Notation",
+    "page": "index.html",
+    "topics": [
+      ["opening", "Read and listen"],
+      ["pitch", "Notating Pitch"],
+      ["accidentals", "Accidentals"],
+      ["practicing", "A Quick Note on Practicing"],
+      ["rhythm", "Rhythmic Notation"],
+      ["dots", "Dotted Rhythms"],
+      ["meter", "Meter and Time Signatures"],
+      ["score-practice", "Read the score"],
+      ["practice", "Practice exercise"]
+    ]
+  },
+  {
+    "number": 3,
+    "title": "Intervals",
+    "page": "chapter-3/index.html",
+    "topics": [
+      ["opening", "Read and listen"],
+      ["understanding", "Understanding intervals"],
+      ["interval-chart", "Interval chart and audio"],
+      ["enharmonic", "Enharmonic intervals"],
+      ["identify", "Identify the interval"],
+      ["construct", "Write the upper note"],
+      ["practice-online", "Practice online"]
+    ]
+  }
+]

@@ -1,6 +1,7 @@
 'use strict';
 const fs=require('fs'),path=require('path'),assert=require('assert'),{execFileSync}=require('child_process');
 const root=path.resolve(__dirname,'..');process.chdir(root);
+execFileSync(process.execPath,['scripts/build-navigation.cjs','--check'],{stdio:'inherit'});
 const entries=[];function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){if(e.name==='.git'||e.name==='node_modules')continue;const f=path.join(dir,e.name);if(e.isDirectory())walk(f);else entries.push(f);}}walk(root);
 for(const f of entries){const rel=path.relative(root,f);assert(!/answers.*\.pdf$/i.test(rel),'Instructor answer PDF must stay outside the site: '+rel);if(f.endsWith('.js')||f.endsWith('.cjs'))execFileSync(process.execPath,['--check',f],{stdio:'pipe'});}
 let checked=0;
