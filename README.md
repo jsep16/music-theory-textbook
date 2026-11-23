@@ -45,6 +45,7 @@ Keep descriptive titles and pedagogical annotations, but do not display media as
 
 - [Chapter 2 · Notation](https://jsep16.github.io/music-theory-textbook/)
 - [Chapter 3 · Intervals](https://jsep16.github.io/music-theory-textbook/chapter-3/)
+- [Chapter 5 · Key Signatures](https://jsep16.github.io/music-theory-textbook/chapter-5/)
 
 ## Ongoing editing and publication
 

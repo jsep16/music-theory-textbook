@@ -1,0 +1,13 @@
+{
+  "source": "Approved Chapter 5 student PDF and edited chapter content",
+  "paragraph_style": "Connected multi-sentence paragraphs retained",
+  "audio_files": [
+    "71.mp3",
+    "72.mp3"
+  ],
+  "written_questions": 24,
+  "interactive_circle_positions": 15,
+  "student_pdf": "assets/chapter-5-print.pdf",
+  "instructor_pdf_included": false,
+  "missing_media": []
+}

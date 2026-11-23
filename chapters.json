@@ -28,5 +28,33 @@
       ["construct", "Write the upper note"],
       ["practice-online", "Practice online"]
     ]
+  },
+  {
+    "number": 5,
+    "title": "Key Signatures",
+    "page": "chapter-5/index.html",
+    "topics": [
+      ["opening", "Read and listen"],
+      ["key-and-signature", "Key vs. Key Signature"],
+      ["why-signatures", "Why Key Signatures Exist"],
+      ["key-centers", "The 12 Major Key Centers"],
+      ["accidental-order", "The Order of Flats and Sharps"],
+      ["flat-keys", "Finding Major Key Signatures with Flats"],
+      ["flat-shortcut", "The Shortcut for Flat Keys"],
+      ["sharp-keys", "Finding Major Key Signatures with Sharps"],
+      ["sharp-shortcut", "The Shortcut for Sharp Keys"],
+      ["circle-reference", "The Circle of Fifths"],
+      ["related-keys", "A Map of Musical Distance"],
+      ["relative-minor", "Major and Minor Key Signatures"],
+      ["minor-accidentals", "Key Signature vs. Actual Notes in Minor"],
+      ["musical-context", "Why This Matters"],
+      ["practice", "Practice"],
+      ["identify", "Practice Set 1: Identify the Major Key"],
+      ["count", "Practice Set 2: Name the Number of Sharps or Flats"],
+      ["minor", "Practice Set 3: Find the Relative Minor"],
+      ["musical-challenge", "Practice Set 4: Musical Challenge"],
+      ["complete-circle", "Practice Set 5: Complete the Circle of Fifths"],
+      ["printable", "Printable chapter"]
+    ]
   }
 ]
