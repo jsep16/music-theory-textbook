@@ -52,4 +52,4 @@ This repository is the working source for the whole digital textbook. Keep chapt
 
 Before publishing, run `node scripts/check-site.cjs` and check the affected browser flows when possible. Commit each coherent correction with a descriptive message, then push normally to `main`. Existing GitHub Pages settings publish that branch. Check the Pages workflow and affected public URLs before reporting completion. Git history provides a record of changes and recovery points.
 
-Authenticate once on the Mac using GitHub CLI's browser sign-in and configure it as Git's credential helper. Keep authentication information outside repository files. No manual website uploads are needed for regular chapter work.
+Publishing uses a dedicated SSH deploy key attached only to this repository. Its private key and verified host-key file stay outside the website repository, and this checkout's local Git configuration selects them. No GitHub CLI account-wide authorization or manual website uploads are needed for regular chapter work. Keep the private key private; never commit it. A replacement key on another machine requires repository-owner approval.
