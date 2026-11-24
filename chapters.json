@@ -57,5 +57,37 @@
       ["practice-online", "Practice online"],
       ["printable", "Printable chapter"]
     ]
+  },
+  {
+    "number": 6,
+    "title": "Triads",
+    "page": "chapter-6/index.html",
+    "topics": [
+      ["opening", "Read and listen"],
+      ["intervals-to-chords", "From Intervals to Chords"],
+      ["tertian", "What Is Tertian Harmony?"],
+      ["triad-members", "What Is a Triad?"],
+      ["four-types", "The Four Types of Triads"],
+      ["major", "Major Triads"],
+      ["minor", "Minor Triads"],
+      ["augmented", "Augmented Triads"],
+      ["diminished", "Diminished Triads"],
+      ["compare", "Comparing All Four Triads"],
+      ["relationships", "A Better Way to Think About Triads"],
+      ["construction", "How to Build Any Triad"],
+      ["gravity", "Triads and Musical Gravity"],
+      ["inversions", "Triad Inversions"],
+      ["bass-and-root", "Bass and Root Are Not the Same Thing"],
+      ["voicing", "Inversion vs. Voicing"],
+      ["summary", "Summary"],
+      ["challenge", "Musical Challenge"],
+      ["practice", "Practice Questions"],
+      ["build", "Practice 1: Building Triads"],
+      ["identify", "Practice 2: Identifying Triads"],
+      ["invert", "Practice 3: Triad Inversions"],
+      ["practice-online", "Practice online"],
+      ["ear-training", "Practice 4: Ear Training"],
+      ["printable", "Printable chapter"]
+    ]
   }
 ]

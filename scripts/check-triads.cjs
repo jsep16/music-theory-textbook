@@ -1,0 +1,20 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),path=require('path');
+const root=path.resolve(__dirname,'..'),context=vm.createContext({});
+vm.runInContext(fs.readFileSync(path.join(root,'chapter-6/triad-data.js'),'utf8'),context);
+vm.runInContext(fs.readFileSync(path.join(root,'chapter-6/theory.js'),'utf8'),context);
+const D=context.TRIAD_DATA,T=context.TriadTheory;
+// Reference spellings are independent of the construction formulas.
+const expected=[['D','F#','A'],['D','F','A'],['D','F#','A#'],['D','F','Ab'],['Eb','G','Bb'],['Eb','Gb','Bb'],['Eb','G','B'],['Eb','Gb','Bbb'],['F#','A#','C#'],['F#','A','C#'],['F#','A#','C##'],['F#','A','C'],['Ab','C','Eb'],['Ab','Cb','Eb'],['Ab','C','E'],['Ab','Cb','Ebb'],['B','D#','F#'],['B','D','F#'],['B','D#','F##'],['B','D','F']];
+assert.equal(D.build.length,20);assert.equal(D.identify.length,5);assert.equal(D.inversions.length,12);
+D.build.forEach((q,i)=>{assert.deepEqual(Array.from(q.notes,n=>T.parse(n).name),expected[i]);assert(T.checkNotes(q.notes,q));assert(!T.checkNotes([q.notes[0],'',q.notes[2]],q));assert(!T.checkNotes([q.notes[0],q.notes[2],q.notes[1]],q));});
+const inversions=[['C4','E4','G4'],['E4','G4','C5'],['G4','C5','E5'],['F4','Ab4','C5'],['Ab4','C5','F5'],['C5','F5','Ab5'],['B3','D4','F4'],['D4','F4','B4'],['F4','B4','D5'],['E4','G#4','B#4'],['G#4','B#4','E5'],['B#4','E5','G#5']];
+D.inversions.forEach((q,i)=>{assert.deepEqual(Array.from(q.notes),inversions[i]);assert(T.checkNotes(q.notes,q));const higher=q.notes.map(n=>n.slice(0,-1)+(Number(n.slice(-1))+1));assert(T.checkNotes(higher,q));});
+assert(!T.checkNotes(['E4','G4','C5'],D.inversions[0]));assert(!T.checkNotes(['F4','Ab4','B4'],D.identify[4]));assert(!T.checkNotes(['D4','F4','A4'],D.build[0]));
+for(const [s,n] of [['E-flat','Eb'],['A♭','Ab'],['F double sharp','F##'],['b','B'],['C♯','C#']])assert.equal(T.rootName(s),n);
+for(const s of ['','H','C major','Bb#','<script>'])assert.equal(T.rootName(s),null);
+for(const s of ['C2','C7','D###4','A44','<script>'])assert.equal(T.parse(s),null);
+for(let step=21;step<=48;step++)assert.equal(T.parse(T.fromStep(step)).step,step);
+const svg=T.svg(['C4','E4','G4'],'Example');assert.equal((svg.match(/<ellipse/g)||[]).length,3);assert.equal((svg.match(/fill="none" stroke="/g)||[]).length,3);assert(!svg.includes('fill="white"'));
+const html=fs.readFileSync(path.join(root,'chapter-6/index.html'),'utf8');assert.equal((html.match(/<audio\b/g)||[]).length,9);assert(html.includes('Download printable chapter'));assert(html.includes('exercises/ear-chord'));assert(!html.includes('dropbox.com'));assert(fs.readFileSync(path.join(root,'chapter-6/assets/chapter-6-print.pdf')).subarray(0,5).toString()==='%PDF-');
+console.log('PASS: 20 independently checked triad spellings, 12 inversions and octave variants, exact accidental spelling, wrong bass/order/blank cases, staff coordinates, transparent noteheads, nine local players, practice links, and student PDF.');

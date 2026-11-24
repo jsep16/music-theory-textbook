@@ -1,0 +1,23 @@
+{
+  "source": "Approved Chapter 6 student PDF",
+  "audio_files": [
+    "h-1.mp3",
+    "h-2.mp3",
+    "h-3.mp3",
+    "h-4.mp3",
+    "h-5.mp3",
+    "h-6.mp3",
+    "h-7.mp3",
+    "h-8.mp3",
+    "h-9.mp3"
+  ],
+  "practice_chords": {
+    "build": 20,
+    "identify": 5,
+    "inversions": 12
+  },
+  "student_pdf": "assets/chapter-6-print.pdf",
+  "instructor_pdf_included": false,
+  "missing_media": [],
+  "seventh_chords_deferred": true
+}
