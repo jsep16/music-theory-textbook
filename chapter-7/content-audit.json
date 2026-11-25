@@ -1,0 +1,28 @@
+{
+  "source": "Approved Chapter 7 student PDF with revised practice clefs",
+  "audio_files": [
+    "h-10.mp3",
+    "h-11.mp3",
+    "h-12.mp3",
+    "h-13.mp3",
+    "h-14.mp3",
+    "h-15.mp3",
+    "h-16.mp3",
+    "h-17.mp3"
+  ],
+  "practice_chords": {
+    "build": 25,
+    "identify": 5,
+    "inversions": 20
+  },
+  "practice_clefs": [
+    "treble",
+    "bass",
+    "treble",
+    "bass",
+    "treble"
+  ],
+  "student_pdf": "assets/chapter-7-print.pdf",
+  "instructor_pdf_included": false,
+  "missing_media": []
+}

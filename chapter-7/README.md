@@ -1,0 +1,3 @@
+# Chapter 7 · Seventh Chords
+
+Approved chapter text, opening overview, eight local recordings, 25 interactive constructions, five identifications, and 20 inversion constructions. Construction and inversion clefs match the revised student PDF: treble/bass/treble/bass/treble by root/chord group. Four note slots support menus, staff taps, and arrow keys, with exact spelling checks including double flats. Open noteheads retain staff lines, and adjacent chord tones have offset heads. Construction labels and bass-member labels are checked alongside notes. Responses stay in memory until reload and are not sent or stored. The green download button serves the approved student PDF. Instructor answer PDFs remain outside the public repository.

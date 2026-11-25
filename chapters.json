@@ -89,5 +89,34 @@
       ["ear-training", "Practice 4: Ear Training"],
       ["printable", "Printable chapter"]
     ]
+  },
+  {
+    "number": 7,
+    "title": "Seventh Chords",
+    "page": "chapter-7/index.html",
+    "topics": [
+      ["opening", "Read and listen"],
+      ["five-types", "Five Common Seventh-Chord Qualities"],
+      ["major-seventh", "Major Seventh Chords"],
+      ["dominant-seventh", "Dominant Seventh Chords"],
+      ["dominant-function", "Why Is It Called Dominant Seventh?"],
+      ["minor-seventh", "Minor Seventh Chords"],
+      ["half-diminished", "Half-Diminished Seventh Chords"],
+      ["fully-diminished", "Fully Diminished Seventh Chords"],
+      ["spelling", "Why B Double-Flat?"],
+      ["compare", "Comparing the Five Seventh Chords"],
+      ["inversions", "Seventh-Chord Inversions"],
+      ["identify-inversions", "Identifying Chords Outside Root Position"],
+      ["gravity", "Harmony and Musical Gravity"],
+      ["relationships", "A Better Way to Think About Harmony"],
+      ["summary", "Summary"],
+      ["practice", "Practice Questions"],
+      ["build", "Practice 1: Building Seventh Chords"],
+      ["identify", "Practice 2: Identifying Seventh Chords"],
+      ["invert", "Practice 3: Seventh-Chord Inversions"],
+      ["practice-online", "Practice online"],
+      ["aural-practice", "Aural practice"],
+      ["printable", "Printable chapter"]
+    ]
   }
 ]
