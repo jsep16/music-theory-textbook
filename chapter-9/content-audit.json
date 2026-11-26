@@ -1,0 +1,27 @@
+{
+  "source": "Approved Chapter 9 Roman Numerals student chapter",
+  "audio_files": [
+    "rn-1.mp3"
+  ],
+  "practice": {
+    "triads": 28,
+    "major": 10,
+    "minor": 7,
+    "reflection_questions": 2
+  },
+  "keys": [
+    "D major",
+    "E\u266d major",
+    "A major",
+    "B\u266d major"
+  ],
+  "clefs": [
+    "treble",
+    "bass",
+    "treble",
+    "bass"
+  ],
+  "student_pdf": "assets/chapter-9-print.pdf",
+  "instructor_pdf_included": false,
+  "missing_media": []
+}

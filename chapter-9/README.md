@@ -1,0 +1,3 @@
+# Chapter 9 · Roman Numerals
+
+Approved student text, six reference tables, one local recording and score, 28 triad constructions, 10 major-key identifications, seven minor-key identifications, and reflection practice. Key signatures and alternating clefs match the student worksheet. Note menus, staff taps, and arrow keys support construction; checking uses exact spelling and case-sensitive Roman numerals. Open noteheads preserve staff lines. Responses stay in memory until reload and are not submitted or stored. The green button serves the approved student PDF. Instructor answers remain outside the repository.

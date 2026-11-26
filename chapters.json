@@ -118,5 +118,29 @@
       ["aural-practice", "Aural practice"],
       ["printable", "Printable chapter"]
     ]
+  },
+  {
+    "number": 9,
+    "title": "Roman Numerals",
+    "page": "chapter-9/index.html",
+    "topics": [
+      ["opening", "Read and listen"],
+      ["build-from-scale", "Building Chords from a Scale"],
+      ["diatonic-pattern", "The Pattern of Diatonic Triads"],
+      ["diatonic", "What Does Diatonic Mean?"],
+      ["roman-numerals", "Roman Numerals"],
+      ["capitalization", "Uppercase and Lowercase Roman Numerals"],
+      ["different-keys", "The Same Progression in Different Keys"],
+      ["function", "Chord Identity and Harmonic Function"],
+      ["minor-keys", "What About Minor Keys?"],
+      ["leading-tone", "The Leading Tone and the Major Dominant"],
+      ["gravity", "Roman Numerals and Musical Gravity"],
+      ["summary", "Summary"],
+      ["practice", "Practice Questions"],
+      ["build", "Practice 1: Diatonic Triads"],
+      ["identify", "Practice 2: Roman Numeral Identification"],
+      ["minor", "Practice 3: Roman Numerals in Minor"],
+      ["printable", "Printable chapter"]
+    ]
   }
 ]
